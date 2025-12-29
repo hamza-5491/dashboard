@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="grid md:grid-cols-2 sm:grid-cols-1">
+        <nav
+            class="absolute xl:transform-[translate(34%,30%)] lg:transform-[translate(0%,10%)] xl:w-[60%] w-[100%] flex justify-between items-center bg-[rgba(0,0,0,0.1)] backdrop-blur-sm px-8 py-3 rounded-xl shadow-xl border-gray-600 border-2 uppercase">
+            <a href="" class="text-white">Visison Free Ui</a>
+            <ul class="md:flex gap-10 hidden">
+                <li class="text-white text-xs">Dashboard</li>
+                <li class="text-white text-xs">People</li>
+                <li class="text-white text-xs">Signup</li>
+                <li class="text-white text-xs">Signin</li>
+            </ul>
+            <button class="md:block hidden text-white uppercase bg-blue-600 px-8 py-2 text-xs rounded-xl">Free
+                Downlaod</button>
+            <button id="btnpress" class="block md:hidden"><i class="ri-align-justify text-white"></i></button>
+        </nav>
+
+        <!-- mobile nav -->
+        <div class="hidden px-6 fixed top-13 w-[100%] h-[100vh] z-10 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm" id="menu">
+            <ul class="flex flex-col gap-10 mb-4 pt-4">
+                <li class="text-white text-xs">Dashboard</li>
+                <li class="text-white text-xs">People</li>
+                <li class="text-white text-xs">Signup</li>
+                <li class="text-white text-xs">Signin</li>
+            </ul>
+            <button class="text-white uppercase bg-blue-600 px-8 py-2 text-xs rounded-xl">Free Downlaod</button>
+        </div>
+
+
+
+        <div class="bg-[url(images/Group122.png)] bg-center bg-cover h-[120vh] flex justify-center items-center">
+            <div class="text-center text-white uppercase">
+                <p>Inspired By the Future</p>
+                <h1 class="font-bold text-2xl bg-linear-to-r from-white/0 to-black/40">The Visison Ui dashboard</h1>
+            </div>
+        </div>
+        <div
+            class="md:h-[120vh] bg-linear-65 from-[#0F123B] via-[#090D2E] to-[#020515] flex justify-start items-center">
+            <form action="" class="md:pl-20 px-6 py-4 text-white lg:w-[60%] w-[100%] mt-10">
+                <h1 class="font-bold text-2xl text-center">Welcome!</h1>
+                <p class="text-xs mb-4 text-center">Use these awesome froms to login or create new account in yout
+                    project for free.</p>
+                <div class="bg-[rgba(0,0,0,0.1)] backdrop-blur-2xl border-gray-600 border-2 rounded-xl px-8 py-8">
+                    <div>
+                        <ul class="flex justify-evenly">
+                            <li class="backdrop-blur-2xl border-gray-600 border-2 rounded-xl px-4 py-3"><i
+                                    class="ri-facebook-circle-fill"></i></li>
+                            <li class="backdrop-blur-2xl border-gray-600 border-2 rounded-xl px-4 py-3"><i
+                                    class="ri-apple-fill"></i></li>
+                            <li class="backdrop-blur-2xl border-gray-600 border-2 rounded-xl px-4 py-3"><i
+                                    class="ri-google-fill"></i></li>
+                        </ul>
+                    </div>
+
+                    <form action="" id="signup">
+
+                        <label for="name" class="text-xs">Name</label><br>
+                        <input type="text" name="" id="name"
+                            class="w-[100%] bg-[rgba(0,0,0,0.1)] backdrop-blur-2xl border-gray-600 border-2 rounded-xl placeholder:text-sm placeholder:text-gray-600 py-1 px-3"
+                            placeholder="Enter yout Name"><br>
+                        <label for="email" class="text-xs">Email</label><br>
+                        <input type="email" name="" id="email"
+                            class="w-[100%] bg-[rgba(0,0,0,0.1)] backdrop-blur-2xl border-gray-600 border-2 rounded-xl placeholder:text-sm placeholder:text-gray-600 py-1 px-3"
+                            placeholder="Enter yout Email"><br>
+                        <label for="password" class="text-xs">password</label><br>
+                        <input type="password" name="" id="password" placeholder="Your password"
+                            class="mb-5 w-[100%] bg-[rgba(0,0,0,0.1)] backdrop-blur-2xl border-gray-600 border-2 rounded-xl placeholder:text-sm placeholder:text-gray-600 py-1 px-3"><br>
+                        <button>Remember me</button><br>
+                        <a href="login.html"
+                            class="w-[100%] mt-6 mb-4 text-white uppercase cursor-pointer bg-blue-600 px-8 py-2 text-xs rounded-xl">Sign
+                            Up</a>
+                    </form>
+                    <p class="text-xs text-center">Aready have an account? <a href="login.html" class="">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="bg-[url(images/Background.png)] bg-center bg-cover grid grid-cols-5">
+
+        <!-- sidebar mobile -->
+        <div id="sidebarmenumbl"
+            class="z-10 fixed h-[100%] top-0 -left-full transition-all duration-700 rounded-md bg-[rgba(0,0,0,0.1)] backdrop-blur-sm col-span-1 shadow-xl lg:relative flex flex-col justify-between lg:left-0">
+            <div class="absolute right-5 top-5 lg:hidden block">
+                <button id="sidebarbtncross" class="block cursor-pointer"><i
+                        class="ri-close-fill text-white"></i></button>
+            </div>
+            <div class="text-white pt-5">
+                <h1 class="text-center">VISION UI FREE</h1>
+                <ul class="mt-4 text-sm">
+                    <li class="mx-2 mb-1 py-3 hover:bg-[#1A1F37] rounded-xl group active:"><a href="dashboard.html"><i
+                                class="ri-home-4-fill ml-4 bg-[#1A1f37] group-hover:bg-[#0075FF] px-2 py-2 rounded-xl mr-4 text-[#0075FF] group-hover:text-[#fff] transition duration-100"></i><span>Dashboard</span></a>
+                    </li>
+                    <li class="mx-2 mb-1 py-3 hover:bg-[#1A1F37] rounded-xl group active:"><a href="tables.html"><i
+                                class="ri-bar-chart-grouped-line ml-4 bg-[#1A1f37] group-hover:bg-[#0075FF] px-2 py-2 rounded-xl mr-4 text-[#0075FF] group-hover:text-[#fff] transition duration-100"></i><span>Tables</span></a>
+                    </li>
+                    <li class="mx-2 mb-1 py-3 hover:bg-[#1A1F37] rounded-xl group active:"><a href="billing.html"><i
+                                class="ri-wallet-fill ml-4 bg-[#1A1f37] group-hover:bg-[#0075FF] px-2 py-2 rounded-xl mr-4 text-[#0075FF] group-hover:text-[#fff] transition duration-100"></i><span>Billing</span></a>
+                    </li>
+                    <li class="mx-2 py-3 hover:bg-[#1A1F37] rounded-xl group active:"><a href=""><i
+                                class="ri-settings-2-line ml-4 bg-[#1A1f37] group-hover:bg-[#0075FF] px-2 py-2 rounded-xl mr-4 text-[#0075FF] group-hover:text-[#fff] transition duration-100"></i><span>RTL</span></a>
+                    </li>
+                </ul>
+                <p class="ml-6">Account pages</p>
+                <ul class="mt-4 text-sm">
+                    <li class="mx-2 mb-1 py-3 hover:bg-[#1A1F37] rounded-xl group active:"><a href=""><i
+                                class="ri-user-fill ml-4 bg-[#1A1f37] group-hover:bg-[#0075FF] px-2 py-2 rounded-xl mr-4 text-[#0075FF] group-hover:text-[#fff] transition duration-100"></i><span>Profile</span></a>
+                    </li>
+                    <li class="mx-2 mb-1 py-3 hover:bg-[#1A1F37] rounded-xl group active:"><a href=""><i
+                                class="ri-login-box-line ml-4 bg-[#1A1f37] group-hover:bg-[#0075FF] px-2 py-2 rounded-xl mr-4 text-[#0075FF] group-hover:text-[#fff] transition duration-100"></i><span>Login</span></a>
+                    </li>
+                    <li class="mx-2 mb-1 py-3 hover:bg-[#1A1F37] rounded-xl group active:"><a href=""><i
+                                class="ri-rocket-2-fill ml-4 bg-[#1A1f37] group-hover:bg-[#0075FF] px-2 py-2 rounded-xl mr-4 text-[#0075FF] group-hover:text-[#fff] transition duration-100"></i><span>SignUp</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="px-2">
+                <div
+                    class="rounded-lg bg-[url(images/need-help-img.png)] bg-center bg-cover w-[100%] py-4 px-4 text-white">
+                    <div class="bg-white px-3 py-2 inline-block rounded-3xl">
+                        <i class="ri-question-fill text-blue-800"></i>
+                    </div>
+                    <h1>Need Help?</h1>
+                    <p>Please check our docs</p>
+                    <button
+                        class="uppercase bg-[rgba(0,0,0,0.2)] px-4 py-1 mt-2 backdrop-blur-sm w-[100%]">Documentation</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- main content -->
+        <div class="text-white lg:col-span-4 col-span-5 mt-2">
+            <div class="flex justify-between items-center pr-12 pl-6">
+                <button id="sidebarbtn" class="lg:hidden cursor-pointer absolute top-2 left-32"><i
+                        class="ri-align-justify text-white"></i></button>
+                <div class="text-white">
+                    <p class="text-sm"><span class="">pages </span>/ Billing</p>
+                    <p>Billing</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <input type="text" name="" placeholder="Search anything"
+                        class="sm:block hidden w-[100%] bg-[rgba(0,0,0,0.1)] backdrop-blur-2xl border-gray-600 border-2 rounded-xl placeholder:text-xs placeholder:text-white pb-2 pt-1 px-3">
+                    <button class="cursor-pointer sm:hidden block" id="search"><i class="ri-search-line"></i></button>
+                    <a href=""><i class="ri-user-fill"></i>Signin</a>
+                    <a href=""><i class="ri-settings-4-fill"></i></a>
+                    <a href=""><i class="ri-notification-2-fill"></i></a>
+                </div>
+            </div>
+
+
+            <div class="grid grid-cols-12 px-5 py-4 gap-3">
+                <div class="lg:col-span-8 col-span-12">
+                    <div class="grid grid-cols-12 gap-3">
+                        <div
+                            class="md:col-span-6 col-span-12 bg-[url(images/card-Background.png)] bg-center bg-cover px-4 py-4 rounded-lg flex flex-col justify-between card">
+                            <div class="flex justify-between items-center">
+                                <h1>Vision Ui</h1>
+                                <div class="flex">
+                                    <div class="bg-white/45 w-4 h-4 rounded-full"></div>
+                                    <div class="bg-white/45 w-4 h-4 rounded-full relative -left-1"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="font-bold">7453289236249XXXX</h1>
+                                <div class="flex text-sm gap-3">
+                                    <div>
+                                        <p>Valid Thru</p>
+                                        <h1>05/24</h1>
+                                    </div>
+                                    <div>
+                                        <p>CVV</p>
+                                        <h1>09X</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="md:col-span-6 col-span-12 bg-[rgba(0,0,0,0.4)] backdrop-blur-sm rounded-lg px-4 py-4">
+                            <div
+                                class="flex justify-between bg-[rgba(0,0,0,0.4)] backdrop-blur-sm px-4 py-4 rounded-lg">
+                                <div>
+                                    <p class="text-xs">Credit Balance</p>
+                                    <h1 class="font-bold">$25215</h1>
+                                </div>
+                                <div>
+                                    <i class="ri-more-2-fill"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p class="text-xs">Newest</p>
+                                <div class="flex justify-between">
+                                    <div class="flex gap-2 mt-2">
+                                        <div>
+                                            <i
+                                                class="ri-bill-fill text-green-600 bg-[rgba(0,0,0,0.4)] backdrop-blur-sm text-xs px-2 py-2 rounded-full"></i>
+                                        </div>
+                                        <div>
+                                            <p>Bill & Taxes</p>
+                                            <p>Today,16:36</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">-154.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 px-4 py-6 mt-2 bg-[rgba(0,0,0,0.4)] backdrop-blur-sm rounded-lg">
+                        <div class="col-span-12 flex justify-between w-[100%]">
+                            <div>
+                                <h1>Payment Method</h1>
+                            </div>
+                            <div><button id="newbtncard" class="bg-blue-600 text-white px-4 p-2 rounded-lg">Add new card</button></div>
+                        </div>
+                        <div class="md:col-span-12 col-span-12 grid grid-cols-12 w-[100%] gap-3 mt-3">
+                            <div
+                                class="md:col-span-6 col-span-12 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm border-gray-600 border rounded-lg flex justify-between px-3 py-4">
+                                <div class="flex gap-4 items-center">
+                                    <div class="bg-red-600 w-3 h-3 rounded-full">
+                                        <div class="bg-yellow-600 w-3 h-3 rounded-full relative left-2"></div>
+                                    </div>
+                                    <p>9239828432882782378</p>
+                                </div>
+                                <div><i class="ri-pencil-fill"></i></div>
+                            </div>
+                            <div
+                                class="md:col-span-6 col-span-12 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm border-gray-600 border rounded-lg flex justify-between px-3 py-4">
+                                <div class="flex gap-4 items-center">
+                                    <div class="bg-red-600 w-3 h-3 rounded-full">
+                                        <div class="bg-yellow-600 w-3 h-3 rounded-full relative left-2"></div>
+                                    </div>
+                                    <p>9239828432882782378</p>
+                                </div>
+                                <div><i class="ri-pencil-fill"></i></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 col-span-12  bg-[rgba(0,0,0,0.4)] backdrop-blur-sm rounded-lg px-5 py-4">
+                    <div class="flex justify-between items-center">
+                        <h1>Invoices</h1>
+                        <button class="bg-blue-600 px-8 py-2 rounded-lg">VIEW ALL</button>
+                    </div>
+                    <div class="mt-5 flex flex-col justify-evenly h-[80%] gap-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h1>March,10,2020</h1>
+                                <p class="text-xs text-gray-300">#MS-632572</p>
+                            </div>
+                            <div>
+                                <span>$180</span>
+                                <a href=""><i class="ri-file-list-line"></i><span
+                                        class="text-xs text-gray-300">Pdf</span></a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <h1>June,10,2020</h1>
+                                <p class="text-xs text-gray-300">#MS-632572</p>
+                            </div>
+                            <div>
+                                <span>$280</span>
+                                <a href=""><i class="ri-file-list-line"></i><span
+                                        class="text-xs text-gray-300">Pdf</span></a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <h1>April,10,2020</h1>
+                                <p class="text-xs text-gray-300">#MS-632572</p>
+                            </div>
+                            <div>
+                                <span>$180</span>
+                                <a href=""><i class="ri-file-list-line"></i><span
+                                        class="text-xs text-gray-300">Pdf</span></a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <h1>May,10,2020</h1>
+                                <p class="text-xs text-gray-300">#MS-632572</p>
+                            </div>
+                            <div>
+                                <span>$980</span>
+                                <a href=""><i class="ri-file-list-line"></i><span
+                                        class="text-xs text-gray-300">Pdf</span></a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <h1>September,10,2020</h1>
+                                <p class="text-xs text-gray-300">#MS-632572</p>
+                            </div>
+                            <div>
+                                <span>$180</span>
+                                <a href=""><i class="ri-file-list-line"></i><span
+                                        class="text-xs text-gray-300">Pdf</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 px-5 py-4 gap-3">
+                <div class="lg:col-span-8 col-span-12 bg-[rgba(0,0,0,0.4)] backdrop-blur-sm rounded-lg px-4 py-4" id="maindiv">
+                    <p>Billing Information</p>
+
+                    <div class="bg-[rgba(0,0,0,0.4)] backdrop-blur-sm rounded-lg px-4 py-4 mt-4 deletediv">
+                        <div class="flex justify-between items-center">
+                            <p>Oliver Liam</p>
+                            <div class="text-xs flex gap-4">
+                                <button class="text-red-400 delete" id="delete"><i class="ri-delete-bin-fill"></i> Delete</button>
+                                <button id="edit"><i class="ri-pencil-fill"></i> Edit</button>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-300 mt-3">
+                            <p>Company Name: Viking Brition</p>
+                            <p>Email Address: Oliver@gmail.com</p>
+                            <p>Vat Number: 82362736732</p>
+                        </div>
+
+                    </div>
+                    <div class="bg-[rgba(0,0,0,0.4)] backdrop-blur-sm rounded-lg px-4 py-4 mt-4 deletediv">
+                        <div class="flex justify-between items-center">
+                            <p>Oliver Liam</p>
+                            <div class="text-xs flex gap-4">
+                                <button class="text-red-400 delete"><i class="ri-delete-bin-fill"></i> Delete</button>
+                                <button><i class="ri-pencil-fill"></i> Edit</button>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-300 mt-3">
+                            <p>Company Name: Viking Brition</p>
+                            <p>Email Address: Oliver@gmail.com</p>
+                            <p>Vat Number: 82362736732</p>
+                        </div>
+
+                    </div>
+                    <div class="bg-[rgba(0,0,0,0.4)] backdrop-blur-sm rounded-lg px-4 py-4 mt-4 deletediv">
+                        <div class="flex justify-between items-center">
+                            <p>Oliver Liam</p>
+                            <div class="text-xs flex gap-4">
+                                <button class="text-red-400 delete"><i class="ri-delete-bin-fill"></i> Delete</button>
+                                <button><i class="ri-pencil-fill"></i> Edit</button>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-300 mt-3">
+                            <p>Company Name: Viking Brition</p>
+                            <p>Email Address: Oliver@gmail.com</p>
+                            <p>Vat Number: 82362736732</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="lg:col-span-4 col-span-12 bg-[rgba(0,0,0,0.4)] backdrop-blur-sm rounded-lg px-2 py-2">
+                    <div class="flex justify-between text-xs">
+                        <p>Your Transaction</p>
+                        <p>23-30 March 2020</p>
+                    </div>
+                    <div class="mt-2 flex justify-between items-center">
+                        <div class="flex gap-2">
+                            <div class="border-green-600 border px-2 py-1 rounded-full"><i class="ri-arrow-up-line"></i>
+                            </div>
+                            <div class="text-xs">
+                                <p>Netflix</p>
+                                <p>27 March 2020, at 12:20 PM</p>
+                            </div>
+                        </div>
+                        <p>-2500</p>
+                    </div>
+                    <div class="flex justify-evenly flex-col h-[100%]">
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="flex gap-2">
+                                <div class="border-green-600 border px-2 py-1 rounded-full"><i
+                                        class="ri-arrow-up-line"></i>
+                                </div>
+                                <div class="text-xs">
+                                    <p>Netflix</p>
+                                    <p>27 March 2020, at 12:20 PM</p>
+                                </div>
+                            </div>
+                            <p>-2500</p>
+                        </div>
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="flex gap-2">
+                                <div class="border-green-600 border px-2 py-1 rounded-full"><i
+                                        class="ri-arrow-up-line"></i>
+                                </div>
+                                <div class="text-xs">
+                                    <p>Netflix</p>
+                                    <p>27 March 2020, at 12:20 PM</p>
+                                </div>
+                            </div>
+                            <p>-2500</p>
+                        </div>
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="flex gap-2">
+                                <div class="border-green-600 border px-2 py-1 rounded-full"><i
+                                        class="ri-arrow-up-line"></i>
+                                </div>
+                                <div class="text-xs">
+                                    <p>Netflix</p>
+                                    <p>27 March 2020, at 12:20 PM</p>
+                                </div>
+                            </div>
+                            <p>-2500</p>
+                        </div>
+                        <div class="mt-2 flex justify-between items-center">
+                            <div class="flex gap-2">
+                                <div class="border-green-600 border px-2 py-1 rounded-full"><i
+                                        class="ri-arrow-up-line"></i>
+                                </div>
+                                <div class="text-xs">
+                                    <p>Netflix</p>
+                                    <p>27 March 2020, at 12:20 PM</p>
+                                </div>
+                            </div>
+                            <p>-2500</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
